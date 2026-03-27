@@ -5,7 +5,7 @@ export default function DiversidadSection() {
     <section className="py-16 px-6">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Gallery grid */}
-        <div className="w-full md:w-1/2 max-w-sm mx-auto">
+        <div className="w-full md:w-1/2">
           <Gallery />
         </div>
 

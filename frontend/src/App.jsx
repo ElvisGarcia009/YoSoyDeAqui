@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Contactos from './pages/Contactos';
 import Educacion from './pages/Educacion';
 import Unete from './pages/Unete';
+import Campana from './pages/Campana';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/contactos" element={<Contactos />} />
           <Route path="/educacion" element={<Educacion />} />
           <Route path="/unete" element={<Unete />} />
+          <Route path="/campana" element={<Campana />} />
         </Routes>
       </div>
     </BrowserRouter>

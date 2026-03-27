@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const links = [
-  { to: '/sobre-nosotros', label: 'Sobre nosotros' },
   { to: '/contactos', label: 'Contáctos' },
+  { to: '/campana', label: 'Campaña' },
   { to: '/educacion', label: 'Educación' },
   { to: '/unete', label: 'Únete' },
 ];
@@ -24,20 +25,14 @@ export default function Navbar() {
           <NavLink to="/contactos" className={linkClass}>
             Contáctos
           </NavLink>
+          <NavLink to="/campana" className={linkClass}>
+            Campaña
+          </NavLink>
         </div>
 
         {/* Logo (centered) */}
         <NavLink to="/" className="flex-shrink-0 mx-auto md:mx-0">
-          <div className="text-center leading-tight">
-            <div className="font-heading text-white text-2xl font-black tracking-wide">
-              <span className="text-coral italic">Tú</span>{' '}
-              <span className="text-white">ERE&apos;</span>
-            </div>
-            <div className="font-heading text-2xl font-black tracking-wide">
-              <span className="text-white">DE </span>
-              <span className="text-teal italic">aquí</span>
-            </div>
-          </div>
+          <img src={logo} alt="Tú ere' de aquí" className="h-24 w-auto" />
         </NavLink>
 
         {/* Right links (desktop) */}

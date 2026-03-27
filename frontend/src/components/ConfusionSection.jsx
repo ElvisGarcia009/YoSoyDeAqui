@@ -32,7 +32,7 @@ export default function ConfusionSection() {
         </div>
 
         {/* Three columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-12">
           {concepts.map(({ title, bg, text }) => (
             <div key={title} className="text-center">
               <div className={`${bg} inline-block px-6 py-2 mb-4`}>

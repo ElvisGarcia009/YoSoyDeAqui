@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream:  '#f0ebe3',
-        dark:   '#2d2d2d',
-        teal:   '#4ecdc4',
-        coral:  '#e63946',
-        yellow: '#ffd60a',
-        pink:   '#ff6b9d',
+        cream:  '#edebe4',
+        dark:   '#332e31',
+        teal:   '#7ec0c4',
+        coral:  '#ef3a42',
+        yellow: '#ffc959',
+        pink:   '#fac7cb',
       },
       fontFamily: {
-        heading: ['"Barlow Condensed"', 'sans-serif'],
-        body:    ['Inter', 'sans-serif'],
+        heading: ['"Cimo Ones"', 'sans-serif'],
+        body:    ['Grenadine', 'serif'],
       },
     },
   },

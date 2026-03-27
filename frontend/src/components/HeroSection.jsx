@@ -66,13 +66,6 @@ export default function HeroSection() {
           &ldquo;debe verse&rdquo;. Hoy afirmamos y quitamos la duda de esa expresión.
         </p>
 
-        {/* Decorative arrow */}
-        <div className="mb-6">
-          <svg width="40" height="30" viewBox="0 0 40 30" className="text-dark opacity-40">
-            <path d="M0 15 Q20 0 35 15 L30 10 M35 15 L30 20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-          </svg>
-        </div>
-
         <Link
           to="/unete"
           className="inline-block bg-coral text-white font-heading font-black text-lg tracking-widest uppercase px-8 py-4 hover:bg-red-700 transition-colors duration-200 self-start"

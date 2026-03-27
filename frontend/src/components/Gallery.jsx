@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import { getRandomPhotos } from '../services/api';
 
-// Placeholder colors cycling through the brand palette
-const PLACEHOLDER_COLORS = [
-  'bg-coral',
-  'bg-teal',
-  'bg-pink',
-  'bg-yellow',
-  'bg-coral',
-  'bg-teal',
-  'bg-yellow',
-  'bg-pink',
-  'bg-coral',
+// Square background + inner circle color pairs cycling through the brand palette
+const CELL_STYLES = [
+  { bg: 'bg-coral',  circle: 'bg-teal'   },
+  { bg: 'bg-teal',   circle: 'bg-pink'   },
+  { bg: 'bg-pink',   circle: 'bg-coral'  },
+  { bg: 'bg-yellow', circle: 'bg-coral'  },
+  { bg: 'bg-coral',  circle: 'bg-yellow' },
+  { bg: 'bg-teal',   circle: 'bg-yellow' },
+  { bg: 'bg-yellow', circle: 'bg-teal'   },
+  { bg: 'bg-pink',   circle: 'bg-yellow' },
+  { bg: 'bg-coral',  circle: 'bg-pink'   },
 ];
 
 export default function Gallery() {
@@ -23,22 +23,24 @@ export default function Gallery() {
 
   const cells = Array.from({ length: 9 }, (_, i) => ({
     photo: photos[i] || null,
-    color: PLACEHOLDER_COLORS[i],
+    ...CELL_STYLES[i],
   }));
 
   return (
-    <div className="grid grid-cols-3 gap-3 p-3">
+    <div className="grid grid-cols-3 gap-4 p-4">
       {cells.map((cell, i) => (
-        <div key={i} className="aspect-square rounded-full overflow-hidden">
-          {cell.photo ? (
-            <img
-              src={cell.photo}
-              alt={`Participante ${i + 1}`}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className={`w-full h-full ${cell.color}`} />
-          )}
+        <div key={i} className={`aspect-square ${cell.bg} p-3`}>
+          <div className="w-full h-full rounded-full overflow-hidden">
+            {cell.photo ? (
+              <img
+                src={cell.photo}
+                alt={`Participante ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className={`w-full h-full ${cell.circle}`} />
+            )}
+          </div>
         </div>
       ))}
     </div>

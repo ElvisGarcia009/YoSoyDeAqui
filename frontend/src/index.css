@@ -2,11 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Cimo Ones';
+  src: url('./assets/fonts/Cimo Ones.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grenadine';
+  src: url('./assets/fonts/grenadine-mvb.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   body {
     margin: 0;
-    background-color: #f0ebe3;
-    font-family: 'Inter', sans-serif;
+    background-color: #edebe4;
+    font-family: 'Grenadine', serif;
   }
 
   #root {
