@@ -117,8 +117,3 @@ npm run build     # build de producción
 - CORS restringido al origen configurado en `ALLOWED_ORIGIN`
 - Headers de seguridad vía Helmet.js
 
-## Despliegue
-
-El backend puede desplegarse en Railway, Render, o cualquier PaaS Node.js. El frontend puede desplegarse en Vercel, Netlify, o servirse como archivos estáticos desde el mismo servidor.
-
-Para despliegue con PostgreSQL gestionado (Neon, Supabase, Railway), asegúrate de que `NODE_ENV=production` esté configurado — esto habilita SSL en la conexión a la base de datos.
