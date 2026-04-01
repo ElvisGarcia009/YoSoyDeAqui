@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const links = [
-  { to: '/contactos', label: 'Contáctos' },
+  { to: '/contactos', label: 'Contactos' },
   { to: '/campana', label: 'Campaña' },
   { to: '/educacion', label: 'Educación' },
   { to: '/unete', label: 'Únete' },
@@ -19,31 +19,25 @@ export default function Navbar() {
 
   return (
     <nav className="bg-dark sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Left links (desktop) */}
-        <div className="hidden md:flex items-center gap-10 flex-1">
-          <NavLink to="/contactos" className={linkClass}>
-            Contáctos
-          </NavLink>
-          <NavLink to="/campana" className={linkClass}>
-            Campaña
-          </NavLink>
-        </div>
-
-        {/* Logo (centered) */}
-        <NavLink to="/" className="flex-shrink-0 mx-auto md:mx-0">
-          <img src={logo} alt="Tú ere' de aquí" className="h-24 w-auto" />
+      <div className="w-full px-6 py-4 flex items-center justify-evenly">
+        {/* Desktop links + logo */}
+        <NavLink to="/contactos" className={({ isActive }) => `${linkClass({ isActive })} hidden md:block`}>
+          Contactos
+        </NavLink>
+        <NavLink to="/campana" className={({ isActive }) => `${linkClass({ isActive })} hidden md:block`}>
+          Campaña
         </NavLink>
 
-        {/* Right links (desktop) */}
-        <div className="hidden md:flex items-center gap-10 flex-1 justify-end">
-          <NavLink to="/educacion" className={linkClass}>
-            Educación
-          </NavLink>
-          <NavLink to="/unete" className={linkClass}>
-            Únete
-          </NavLink>
-        </div>
+        <NavLink to="/" className="flex-shrink-0">
+          <img src={logo} alt="Tú ere' de aquí" className="h-36 w-auto" />
+        </NavLink>
+
+        <NavLink to="/educacion" className={({ isActive }) => `${linkClass({ isActive })} hidden md:block`}>
+          Educación
+        </NavLink>
+        <NavLink to="/unete" className={({ isActive }) => `${linkClass({ isActive })} hidden md:block`}>
+          Únete
+        </NavLink>
 
         {/* Hamburger (mobile) */}
         <button

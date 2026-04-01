@@ -1,7 +1,7 @@
 import logo from '../assets/logo.png';
 
 // Para cambiar el video de la campaña, actualiza la URL a continuación:
-const YOUTUBE_URL = 'https://youtu.be/UlKhI4VmJjI?si=edo-EMcb2Sih_1Dq';
+const YOUTUBE_URL = 'https://youtu.be/PYqjqkgk5SM?si=VA4v-kQv9b0tMIs8';
 
 function getEmbedUrl(url) {
   const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);

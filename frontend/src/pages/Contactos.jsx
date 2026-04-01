@@ -2,7 +2,7 @@ export default function Contactos() {
   return (
     <main className="min-h-screen bg-cream flex flex-col items-center py-20 px-6">
       <h1 className="font-heading font-black text-6xl md:text-8xl text-dark uppercase tracking-tight mb-16">
-        Contáctos
+        Contactos
       </h1>
 
       <div className="flex flex-col items-center gap-12">

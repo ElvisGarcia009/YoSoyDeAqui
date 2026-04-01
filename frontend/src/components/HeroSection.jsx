@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { getRandomPhotos } from '../services/api';
+import banner from '../assets/banner.png';
 
 export default function HeroSection() {
   const [photos, setPhotos] = useState([]);
@@ -33,7 +34,9 @@ export default function HeroSection() {
   const currentPhoto = photos[currentIndex] || null;
 
   return (
-    <section className="flex flex-col md:flex-row min-h-[85vh]">
+    <>
+      <img src={banner} alt="Banner de la campaña" className="w-full block" />
+      <section className="flex flex-col md:flex-row min-h-[85vh]">
       {/* Photo side */}
       <div className="md:w-1/2 bg-gray-200 relative overflow-hidden min-h-64 md:min-h-0">
         {currentPhoto ? (
@@ -61,7 +64,7 @@ export default function HeroSection() {
           que la dominicanidad es diversa, plural y construida desde múltiples raíces.
         </p>
         <p className="text-dark leading-relaxed mb-8 text-justify">
-          Tal vez alguna vez has usado te han preguntado la expresión &ldquo;¿Tú ere&apos; de
+          Tal vez alguna vez has usado o te han preguntado la expresión &ldquo;¿Tú ere&apos; de
           aquí?&rdquo;, debido a una apariencia física que no va con la idea de como el dominicano
           &ldquo;debe verse&rdquo;. Hoy afirmamos y quitamos la duda de esa expresión.
         </p>
@@ -73,6 +76,7 @@ export default function HeroSection() {
           Sé parte de la campaña
         </Link>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

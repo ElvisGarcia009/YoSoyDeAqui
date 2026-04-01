@@ -39,7 +39,7 @@ app.use((err, _req, res, _next) => {
 
   // Handle multer file size error
   if (err.code === 'LIMIT_FILE_SIZE') {
-    return res.status(400).json({ error: 'La imagen no puede superar 5 MB' });
+    return res.status(400).json({ error: 'La imagen no puede superar 10 MB' });
   }
   // Handle multer file type error
   if (err.message && err.message.includes('Solo se permiten')) {
