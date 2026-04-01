@@ -3,7 +3,7 @@ import Gallery from './Gallery';
 export default function DiversidadSection() {
   return (
     <section className="py-16 px-6">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
         {/* Gallery grid */}
         <div className="w-full md:w-1/2">
           <Gallery />

@@ -9,7 +9,7 @@ import Campana from './pages/Campana';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-cream font-body">
+      <div className="min-h-screen bg-cream font-body overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

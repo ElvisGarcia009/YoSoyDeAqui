@@ -29,7 +29,7 @@ export default function Navbar() {
         </NavLink>
 
         <NavLink to="/" className="flex-shrink-0">
-          <img src={logo} alt="Tú ere' de aquí" className="h-36 w-auto" />
+          <img src={logo} alt="Tú ere' de aquí" className="h-16 md:h-36 w-auto" />
         </NavLink>
 
         <NavLink to="/educacion" className={({ isActive }) => `${linkClass({ isActive })} hidden md:block`}>

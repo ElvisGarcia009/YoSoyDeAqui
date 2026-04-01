@@ -55,7 +55,7 @@ export default function HeroSection() {
       </div>
 
       {/* Text side */}
-      <div className="md:w-1/2 bg-cream flex flex-col justify-center px-10 py-16 md:px-16">
+      <div className="md:w-1/2 bg-cream flex flex-col justify-center px-6 py-10 md:px-16">
         <p className="text-dark leading-relaxed mb-4 text-justify">
           <strong>Tú ere&apos; de aquí</strong> es una campaña educativa sobre la diversidad étnica
           en la República Dominicana que busca desmontar la idea de que existe un único rostro o

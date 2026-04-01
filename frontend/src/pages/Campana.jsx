@@ -16,13 +16,13 @@ export default function Campana() {
       <div className="max-w-5xl mx-auto">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <div className="bg-dark px-12 py-8 inline-flex" style={{ borderRadius: '20px' }}>
-            <img src={logo} alt="Tú ere' de aquí" className="h-48 w-auto" />
+          <div className="bg-dark px-6 py-4 md:px-12 md:py-8 inline-flex" style={{ borderRadius: '20px' }}>
+            <img src={logo} alt="Tú ere' de aquí" className="h-28 md:h-48 w-auto" />
           </div>
         </div>
 
         {/* Descripción */}
-        <p className="text-dark/70 mb-12 text-xl text-center max-w-2xl mx-auto">
+        <p className="text-dark/70 mb-12 text-base md:text-xl text-center max-w-2xl mx-auto">
           Conoce el video oficial de la campaña que celebra la diversidad e identidad dominicana.
         </p>
 

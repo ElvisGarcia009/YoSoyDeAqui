@@ -1,7 +1,7 @@
 export default function Contactos() {
   return (
     <main className="min-h-screen bg-cream flex flex-col items-center py-20 px-6">
-      <h1 className="font-heading font-black text-6xl md:text-8xl text-dark uppercase tracking-tight mb-16">
+      <h1 className="font-heading font-black text-4xl md:text-6xl lg:text-8xl text-dark uppercase tracking-tight mb-10 md:mb-16">
         Contactos
       </h1>
 
@@ -13,7 +13,7 @@ export default function Contactos() {
           </svg>
           <a
             href="tel:+18093593232"
-            className="text-dark text-2xl md:text-3xl font-light hover:text-teal transition-colors"
+            className="text-dark text-lg md:text-2xl lg:text-3xl font-light hover:text-teal transition-colors"
           >
             + 1809 - 359 -3232
           </a>
@@ -26,7 +26,7 @@ export default function Contactos() {
           </svg>
           <a
             href="mailto:tueredeaqui@gmail.com"
-            className="text-dark text-2xl md:text-3xl font-light hover:text-teal transition-colors"
+            className="text-dark text-lg md:text-2xl lg:text-3xl font-light hover:text-teal transition-colors"
           >
             tueredeaqui@gmail.com
           </a>
@@ -75,7 +75,7 @@ export default function Contactos() {
             </a>
           </div>
 
-          <p className="text-dark text-2xl md:text-3xl font-light">@tueredeaqui</p>
+          <p className="text-dark text-lg md:text-2xl lg:text-3xl font-light">@tueredeaqui</p>
         </div>
       </div>
     </main>

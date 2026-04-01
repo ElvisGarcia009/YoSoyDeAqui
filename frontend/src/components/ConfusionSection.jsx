@@ -25,14 +25,14 @@ export default function ConfusionSection() {
         {/* Title with decorative lines */}
         <div className="flex items-center gap-4 mb-12">
           <div className="flex-1 h-px bg-dark opacity-40" />
-          <h2 className="font-body text-dark text-lg md:text-xl tracking-wide whitespace-nowrap text-center px-4">
+          <h2 className="font-body text-dark text-base md:text-xl tracking-wide text-center px-4">
             Para aclarar una común confusión...
           </h2>
           <div className="flex-1 h-px bg-dark opacity-40" />
         </div>
 
         {/* Three columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-12">
           {concepts.map(({ title, bg, text }) => (
             <div key={title} className="text-center">
               <div className={`${bg} inline-block px-6 py-2 mb-4`}>

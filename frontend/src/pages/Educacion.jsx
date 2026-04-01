@@ -35,7 +35,7 @@ export default function Educacion() {
   return (
     <main className="min-h-screen bg-cream py-16 px-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="font-heading font-black text-6xl md:text-8xl text-dark uppercase tracking-tight mb-4 text-center">
+        <h1 className="font-heading font-black text-4xl md:text-6xl lg:text-8xl text-dark uppercase tracking-tight mb-4 text-center">
           Educación
         </h1>
         <p className="text-dark text-center mb-16 max-w-2xl mx-auto leading-relaxed">
@@ -47,7 +47,7 @@ export default function Educacion() {
           {articles.map(({ title, color, content }) => (
             <article
               key={title}
-              className={`bg-white rounded-sm border-l-4 ${color} p-8 shadow-sm`}
+              className={`bg-white rounded-sm border-l-4 ${color} p-5 md:p-8 shadow-sm`}
             >
               <h2 className="font-heading font-black text-3xl text-dark uppercase mb-4">
                 {title}
